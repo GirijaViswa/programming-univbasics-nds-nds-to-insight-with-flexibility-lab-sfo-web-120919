@@ -54,8 +54,9 @@ def movies_with_director_key(name, movies_collection)
   new_arr = []
   result = {}
   while i < movies_collection.length do 
-    result[name] = movies_collection[i][:title]
-    new_arr << result 
+    pp movies_collection[i][:]
+    #result[name] = movies_collection[i][:title]
+    #new_arr << result 
     i += 1
   end
   pp new_arr
